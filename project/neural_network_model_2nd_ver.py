@@ -38,10 +38,14 @@ for row in canada_covid_data_with_header:
 data_for_train = np.array(data_for_train).reshape(-1, 1)
 data_for_test = np.array(data_for_test).reshape(-1, 1)
 
+# Split the training data into training and validation sets
+split_index = int(len(data_for_train) * 0.8)
+train_data, val_data = data_for_train[:split_index], data_for_train[split_index:]
+
 
 # Define a custom accuracy function
 def custom_accuracy(y_true, y_pred):
-    return tf.reduce_mean(tf.cast(tf.abs(y_true - y_pred) < 0.1 * tf.abs(y_true), tf.float32))
+    return tf.reduce_mean(tf.cast(tf.abs(y_true - y_pred) < 0.05 * tf.abs(y_true), tf.float32))
 
 
 # Create a neural network
@@ -94,7 +98,7 @@ class PredictionCallback(tf.keras.callbacks.Callback):
 
 
 # Train the neural network
-history = model.fit(data_for_train, data_for_train, epochs=50, batch_size=32, verbose=0, callbacks=[PredictionCallback()])
+history = model.fit(train_data, train_data, epochs=50, batch_size=32, validation_data=(val_data, val_data), verbose=0, callbacks=[PredictionCallback()])
 
 # Evaluate how well the model performs
 loss, accuracy = model.evaluate(data_for_test, data_for_test, verbose=2)
