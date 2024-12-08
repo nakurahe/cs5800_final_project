@@ -1,54 +1,54 @@
 Name,Population,initial_density (per km2),normalized_density
-Abbotsford,"153,524",409,1
-Armstrong,"5,323",1020,2
-Burnaby,"249,125",2750.7,5
-Campbell River,"35,519",246,0
-Castlegar,"8,338",419.6,1
-Chilliwack,"93,203",356.6,1
-Colwood,"18,961",1073.6,2
-Coquitlam,"148,625",1216.7,2
-Courtenay,"28,420",876.7,1
-Cranbrook,"20,499",641.2,1
-Dawson Creek,"12,323",461.1,1
-Delta,"108,455",603.7,1
-Duncan,"5,047",2444.5,4
-Enderby,"3,028",710.4,1
-Fernie,"6,320",418.3,1
-Fort St. John,"21,465",656.9,1
-Grand Forks,"4,112",396.4,1
+Abbotsford,153524,409,1
+Armstrong,5323,1020,2
+Burnaby,249125,2750.7,5
+Campbell River,35519,246,0
+Castlegar,8338,419.6,1
+Chilliwack,93203,356.6,1
+Colwood,18961,1073.6,2
+Coquitlam,148625,1216.7,2
+Courtenay,28420,876.7,1
+Cranbrook,20499,641.2,1
+Dawson Creek,12323,461.1,1
+Delta,108455,603.7,1
+Duncan,5047,2444.5,4
+Enderby,3028,710.4,1
+Fernie,6320,418.3,1
+Fort St. John,21465,656.9,1
+Grand Forks,4112,396.4,1
 Greenwood,702,290.2,0
-Kamloops,"97,902",328.6,1
-Kelowna,"144,576",682.4,1
-Kimberley,"8,115",134.1,0
-Langford,"46,584",1124.4,2
-Langley,"28,963",2845.2,5
-Maple Ridge,"90,990",339.7,1
-Merritt,"7,051",270.7,0
-Mission,"41,519",182.9,0
-Nanaimo,"99,863",1104.1,2
-Nelson,"11,106",930.6,2
-New Westminster,"78,916",5052.4,8
-North Vancouver,"58,120",4913,8
-Parksville,"13,642",939.5,2
-Penticton,"36,885",857.3,1
-Pitt Meadows,"19,146",221.7,0
-Port Alberni,"18,259",928.9,2
-Port Coquitlam,"61,498",2108.7,3
-Port Moody,"33,535",1297.3,2
-Powell River,"13,943",482.4,1
-Prince George,"76,708",242.2,0
-Prince Rupert,"12,300",186.4,0
-Quesnel,"9,889",279.8,0
-Revelstoke,"8,275",200.5,0
-Richmond,"209,937",1629,3
-Rossland,"4,140",69.3,0
-Salmon Arm,"19,432",125.2,0
-Surrey,"568,322",1797.9,3
-Terrace,"12,017",209.6,0
-Trail,"7,920",226.9,0
-Vancouver[a],"662,248",5749.9,10
-Vernon,"44,519",461.7,1
-Victoria[b],"91,867",4722.3,8
-West Kelowna,"36,078",295.5,0
-White Rock,"21,939",4240.6,7
-Williams Lake,"10,947",330.5,1
+Kamloops,97902,328.6,1
+Kelowna,144576,682.4,1
+Kimberley,8115,134.1,0
+Langford,46584,1124.4,2
+Langley,28963,2845.2,5
+Maple Ridge,90990,339.7,1
+Merritt,7051,270.7,0
+Mission,41519,182.9,0
+Nanaimo,99863,1104.1,2
+Nelson,11106,930.6,2
+New Westminster,78916,5052.4,8
+North Vancouver,58120,4913,8
+Parksville,13642,939.5,2
+Penticton,36885,857.3,1
+Pitt Meadows,19146,221.7,0
+Port Alberni,18259,928.9,2
+Port Coquitlam,61498,2108.7,3
+Port Moody,33535,1297.3,2
+Powell River,13943,482.4,1
+Prince George,76708,242.2,0
+Prince Rupert,12300,186.4,0
+Quesnel,9889,279.8,0
+Revelstoke,8275,200.5,0
+Richmond,209937,1629,3
+Rossland,4140,69.3,0
+Salmon Arm,19432,125.2,0
+Surrey,568322,1797.9,3
+Terrace,12017,209.6,0
+Trail,7920,226.9,0
+Vancouver[a],662248,5749.9,10
+Vernon,44519,461.7,1
+Victoria[b],91867,4722.3,8
+West Kelowna,36078,295.5,0
+White Rock,21939,4240.6,7
+Williams Lake,10947,330.5,1
