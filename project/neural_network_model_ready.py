@@ -75,7 +75,7 @@ class PredictionCallback(tf.keras.callbacks.Callback):
         clear_output(wait=True)
         ax.clear()
         ax.plot(self.province_data, label=f'Actual Data (Province {self.province_name})', color='orange')
-        ax.plot(self.data_for_test, label='BC Actual Data', color='green')
+        ax.plot(self.data_for_test, label='BC Actual Data', color='green', linestyle='dashed', linewidth=2)
         ax.plot(predictions, label='BC Predicted Data', color='blue')
         ax.set_title(f'BC Actual vs Predicted Data (Trained with {self.province_name})')
         ax.set_xlabel('Days')
@@ -92,10 +92,6 @@ for i, (data_for_train, province_name) in enumerate(zip(other_provinces_data, ot
     # Convert lists to NumPy arrays and reshape to (number_of_samples, number_of_features)
     data_for_train = np.array(data_for_train).reshape(-1, 1)
 
-    # # Split the training data into training and validation sets
-    # split_index = int(len(data_for_train) * 0.8)
-    # train_data, val_data = data_for_train[:split_index], data_for_train[split_index:]
-
     # Create and compile the model
     model = create_model()
 
@@ -106,20 +102,6 @@ for i, (data_for_train, province_name) in enumerate(zip(other_provinces_data, ot
     loss, accuracy = model.evaluate(bc_data, bc_data, verbose=2)
     print(f"Mean Squared Error on BC data: {loss}")
     print(f"Custom Accuracy on BC data: {accuracy}")
-
-    # # Predict BC's condition
-    # predictions = model.predict(bc_data)
-
-    # Plot the predictions
-    # ax.clear()
-    # ax.plot(bc_data, label='Actual Data', color='orange')
-    # ax.plot(predictions, label='Predicted Data', color='blue')
-    # ax.set_title(f'BC Actual vs Predicted Data (Province {i + 1})')
-    # ax.set_xlabel('Days')
-    # ax.set_ylabel('Confirmed Cases')
-    # ax.legend()
-    # plt.draw()
-    # plt.pause(2)  # Pause to show the plot for 2 seconds
 
 # Disable interactive mode
 plt.ioff()
